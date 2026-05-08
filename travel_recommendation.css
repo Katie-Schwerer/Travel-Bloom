@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.title {
+    font-style: italic;
+    font-size: 30px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.search-box {
+    background-color: white;
+    padding: 11px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-box input {
+    width: 250px;
+    border: none;
+}
+
+.search-box button {
+    margin: 0 6px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+main {
+    background-image: url('./city.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 10px;
+}
