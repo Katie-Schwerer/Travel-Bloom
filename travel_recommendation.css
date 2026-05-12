@@ -44,7 +44,7 @@ nav li a {
     border: none;
 }
 
-.search-box button {
+.search-box button, form button {
     margin: 0 6px;
     background-color: teal;
     color: white;
@@ -97,4 +97,46 @@ main aside {
 i {
     font-size: 27px;
     margin: 1rem 0.5rem;
+}
+
+.red {
+    border: 3px solid red;
+    width: 80%;
+}
+
+p.red {
+    padding: 10px;
+}
+
+article h2 {
+    font-size: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-2 {
+    background-color: rgb(87, 87, 255);
+    padding: 10px;
+    border-radius: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, textarea {
+    margin-bottom: 30px;
+    background: transparent;
+    border: 1px solid white;
 }
