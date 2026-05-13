@@ -1,5 +1,6 @@
 let results = document.getElementById('results');
 let searchBtn = document.getElementById('searchbtn');
+let clearBtn = document.getElementById('resetbtn')
 
 function searchBeachesandTemples(data) {
     let container = document.createElement('section');
@@ -16,11 +17,23 @@ function searchBeachesandTemples(data) {
 }
 
 function searchForCities(data) {
+    let countries = []
     for (let i = 0; i < data.length; i++) {
-        searchBeachesandTemples(data[i].cities)
+        for (let j = 0; j < data[i].cities.length; j++) {
+            countries.push(data[i].cities[j])
+        }
     }
+
+    searchBeachesandTemples(countries);
 }
+
 searchBtn.addEventListener('click', searchCondition);
+clearBtn.addEventListener('click', resetResult);
+
+function resetResult() {
+    document.getElementById("conditionInput").value = "";
+    window.location.reload();
+}
 
 function searchCondition() {
     let input = document.getElementById("conditionInput").value.toLowerCase();
