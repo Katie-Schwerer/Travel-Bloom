@@ -124,10 +124,11 @@ article h2 {
     flex-direction: column;
 }
 
-.title-2 {
+.role {
     background-color: rgb(87, 87, 255);
     padding: 10px;
     border-radius: 25px;
+    text-align: ;
 }
 
 form {
